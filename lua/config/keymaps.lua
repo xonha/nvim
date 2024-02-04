@@ -4,9 +4,8 @@
 
 local map = vim.keymap.set
 
-require("which-key").register({
-  ["<leader>e"] = { name = "explorer", _ = "which_key_ignore" },
-})
-
-map({ "n" }, "<leader>eE", "<leader>fE", { desc = "Explorer (root)", remap = true })
-map({ "n" }, "<leader>ee", "<leader>fe", { desc = "Explorer (cwd)", remap = true })
+map("i", "jk", "<Esc>", { noremap = true, silent = true })
+map("n", "<C-q>", "<cmd>qa<cr>", { noremap = true, silent = true })
+map("i", "jf", function()
+  return vim.fn["codeium#Accept"]()
+end, { expr = true, silent = true })
