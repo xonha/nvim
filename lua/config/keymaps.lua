@@ -4,8 +4,9 @@
 
 local map = vim.keymap.set
 
-map("i", "jk", "<Esc>", { noremap = true, silent = true })
 map("n", "<C-q>", "<cmd>qa<cr>", { noremap = true, silent = true })
+map("n", "ç", "<cmd>Telescope buffers sort_mru=true sort_lastused=true<cr>", { noremap = true, silent = true })
+map("i", "<S-Tab>", "<Tab>", { noremap = true, silent = true })
 map("i", "jf", function()
   return vim.fn["codeium#Accept"]()
 end, { expr = true, silent = true })

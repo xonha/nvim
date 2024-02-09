@@ -1,1 +1,3 @@
-return { "Exafunction/codeium.vim" }
+return {
+  "zbirenbaum/copilot.lua",
+}
