@@ -7,6 +7,7 @@ return {
         mappings = {
           n = {
             ["çd"] = "delete_buffer",
+            ["ç"] = "select_default",
           },
         },
       },
