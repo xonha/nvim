@@ -6,8 +6,9 @@ return {
         initial_mode = "normal",
         mappings = {
           n = {
-            ["çd"] = "delete_buffer",
-            ["ç"] = "select_default",
+            ["d"] = "delete_buffer",
+            ["h"] = "delete_buffer",
+            ["l"] = "select_default",
           },
         },
       },
